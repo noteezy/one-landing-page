@@ -1,0 +1,98 @@
+@import "variables"
+
+*
+  margin: 0
+  padding: 0
+body
+  font-family: $font
+
+.header
+  background-color: #5a5954
+  .logo
+    padding: 30px 0
+  .menu
+    ul
+      text-transform: uppercase
+      float: right
+      margin-bottom: 0
+      font-size: 17px
+      padding: 55px 0
+      font-weight: bold
+      display: inline
+      li
+        padding: 58px 11px
+        display: inline
+        a
+          color: #b8b8b8
+        a:hover
+          text-decoration: none
+      li.active
+        border-bottom: 2px solid $primary-color
+        a
+          color: $primary-color
+#home
+  background-image: url("../img/home.jpg")
+  background-position: center
+  background-size: cover
+  min-height: 700px
+  text-align: center
+  color: white
+#home>div
+    background-color: rgba(23,23,23,0.6)
+    padding-top: 245px
+    width: 100%
+    height: 100%
+.home-header
+  h1,h3,h4
+    margin: 0
+  h3
+    margin-bottom: 45px
+    font-size: 47px
+    text-transform: uppercase
+  h1
+    margin-bottom: 35px
+    font-size: 105px
+    font-weight: bold
+    text-transform: uppercase
+  h4
+    margin-bottom: 135px
+    font-size: 45px
+  h3>span
+    color: $primary-color
+.home-buttons
+  a
+    margin: 0 15px 255px
+    display: inline-block
+    text-transform: uppercase
+    padding: 23px 15px
+    font-size: 17px
+    color: white
+  a:hover
+    text-decoration: none
+  a.green
+    background-color: $primary-color
+  a.blue
+    background-color: #00cbf6
+// div.home-buttons::after
+//   content: " "
+//   display: block
+//   clear: both
+.about
+  padding: 0
+.about-block
+  padding: 85px 0
+  text-align: center
+  img
+    width: 55px
+    margin-bottom: 55px
+    min-height: 100px
+  p
+    font-size: 17px
+    text-transform: uppercase
+    font-weight: bold
+.about-dark
+  color: $primary-color
+  background-color: $secondary-color
+.about-light
+  color: white
+  background-color: $primary-color
